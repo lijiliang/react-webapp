@@ -1,2 +1,2 @@
-export const USERINFO_LOGIN = 'USERINFO_LOGIN';  // 用户登录
-export const UPDATA_CITYNAME = 'UPDATA_CITYNAME'; // 修改城市
+export const USERINFO_LOGIN = 'USERINFO_LOGIN'
+export const UPDATE_CITYNAME = 'UPDATE_CITYNAME'

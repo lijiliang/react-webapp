@@ -4,8 +4,8 @@ class B extends React.Component {
     render() {
         return (
             <p>{this.props.userinfo.city}</p>
-        );
+        )
     }
 }
 
-export default B;
+export default B
