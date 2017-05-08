@@ -7,7 +7,8 @@
     "start": "cross-env NODE_ENV=development node build/dev.js",
     "build": "cross-env NODE_ENV=production node build/prod.js",
     "dev": "cross-env NODE_ENV=development webpack --config ./build/webpack.dev.conf.js",
-    "prod": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.conf.js"
+    "prod": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.conf.js",
+    "mock": "node --harmony ./mock/server.js"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,9 @@
     "imagemin": "^5.2.2",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-webpack-plugin": "^1.4.4",
+    "koa": "^1.2.2",
+    "koa-body": "^1.6.0",
+    "koa-router": "^5.4.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "nyan-progress-webpack-plugin": "^1.2.0",
@@ -73,6 +77,8 @@
     "react-redux": "^5.0.4",
     "react-router": "^2.8.1",
     "redux": "^3.6.0",
-    "redux-logger": "^3.0.1"
+    "redux-logger": "^3.0.1",
+    "es6-promise": "^4.1.0",
+    "whatwg-fetch": "^2.0.3"
   }
 }

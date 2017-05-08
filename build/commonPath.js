@@ -3,7 +3,7 @@
  */
 const path = require('path');
 const rootPath = path.resolve(__dirname, '..');  //项目根目录
-const src = path.join(rootPath, 'src');  // 开发源码目录
+const src = path.join(rootPath, 'app');  // 开发源码目录
 
 const commonPath = {
     rootPath: rootPath,

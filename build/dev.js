@@ -12,8 +12,8 @@ const commonPath = require('./commonPath');
 const app = express();
 
 // 设置代理
-const apiProxy = proxy('/bookzw', {target: 'http://api.youmeixun.com', changeOrigin: true});
-app.use('/bookzw/*', apiProxy); //api子目录下的都是用代理
+const apiProxy = proxy('/api', {target: 'http://127.0.0.1:3008', changeOrigin: true});
+app.use('/api/*', apiProxy); //api子目录下的都是用代理
 
 const compiler = webpack(config);
 
@@ -33,6 +33,6 @@ app.use(webpackDevMiddleware(compiler, {
 // 热重载
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.listen(9000, function(err){
+app.listen(9001, function(err){
     err && console.log(err);
 });
