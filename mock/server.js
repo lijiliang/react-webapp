@@ -25,7 +25,20 @@ router.post('/api/post', koaBody, function *(next) {
 const homeAd = require('./home/ad.js');
 router.get('/api/homead', function *(next){
     this.body = homeAd;
-})
+});
+
+// 首页列表数据
+const homeList = require('./home/homelist.js');
+router.get('/api/homelist/:city/:page', function *(next){
+    // 参数
+    const params = this.params;
+    const city = params.city;
+    const page = params.page;
+    console.log(city, page);
+
+    this.body = homeList;
+});
+
 app.use(router.routes())
    .use(router.allowedMethods());
 

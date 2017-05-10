@@ -14,6 +14,6 @@ export function getAdData(){
  * @param  {[type]} page [页码]
  */
 export function getListData(city, page){
-    const result = get('/api/homeList' + encodeURIComponent(city) + '/' + page);
+    const result = get('/api/homeList/' + encodeURIComponent(city) + '/' + page);
     return result;
 }
