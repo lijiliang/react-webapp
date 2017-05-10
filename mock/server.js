@@ -9,14 +9,11 @@ router.get('/', function *(next) {
 router.get('/api', function *(next) {
     this.body = 'test data'
 });
-router.get('/api/1', function *(next) {
-    this.body = 'test data 1'
-});
 router.get('/api/2', function *(next) {
     this.body = {
         a: 1,
         b: '123'
-    }
+    };
 });
 
 router.post('/api/post', koaBody, function *(next) {
@@ -24,6 +21,11 @@ router.post('/api/post', koaBody, function *(next) {
     this.body = JSON.stringify(this.request.body)
 });
 
+// 首页特惠广告数据
+const homeAd = require('./home/ad.js');
+router.get('/api/homead', function *(next){
+    this.body = homeAd;
+})
 app.use(router.routes())
    .use(router.allowedMethods());
 

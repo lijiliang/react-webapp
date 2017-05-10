@@ -4,6 +4,8 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import HomeHeader from '../../components/HomeHeader';
+import Category from '../../components/Category';
+import Ad from './subpage/Ad';
 
 class Home extends React.Component{
     constructor(props, context){
@@ -14,8 +16,9 @@ class Home extends React.Component{
         return(
             <div>
                 <HomeHeader cityName={this.props.userinfo.cityName}/>
-                <p>Home</p>
-                <Link to="/list">to List</Link>
+                <Category />
+                <div style={{height: '15px'}}></div>
+                <Ad />
             </div>
         );
     }
