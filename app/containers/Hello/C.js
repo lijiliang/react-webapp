@@ -10,7 +10,7 @@ class C extends React.Component {
     }
     changeUserInfo() {
         const actions = this.props.actions;
-        actions.login({
+        actions.updateCityName({
             userid: '123',
             city: 'nanjing',
             cityname: '南京'

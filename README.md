@@ -16,7 +16,7 @@ React开发SPA脚手架。 Webapck / ES6 + Babel / Redux / React Router
 
 ## 安装
 ```shell
-$ git clone https://github.com/lijiliang/react-frame.git
+$ git clone https://github.com/lijiliang/react-webapp.git
 $ cd react-frame
 $ npm install
 ```
@@ -47,7 +47,7 @@ npm run build
 │   │   ├─ reducers/     # （REDUCER）
 │   │   ├─ store/        # （STORE）
 │   ├── routes/        # 路由（ROUTE）
-│   ├── services/      # 服务（SERVICE，用于统一管理 XHR 请求，这是从 Vue Demo 中直接复制过来的）
+│   ├── services/      # 服务（SERVICE，用于统一管理 XHR 请求）
 │   ├── utils/         # 工具库（UTIL）
 │   │   ├─ HoC/          # 高阶组件（HOC，全称 Higher Order Component）
 │   │   ├─ mixins/       # 混合（MIXIN）
