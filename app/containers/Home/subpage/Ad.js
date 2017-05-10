@@ -1,5 +1,5 @@
 import React from 'react';
-import PureRenderMixin from 'react-addons-pure-render-mixin';  // 使用空上插件提高性能
+import PureRenderMixin from 'react-addons-pure-render-mixin';
 import HomeAd from '../../../components/HomeAd';
 import { getAdData } from '../../../fetch/home/home';
 
