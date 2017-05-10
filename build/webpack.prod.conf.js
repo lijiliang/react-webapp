@@ -92,17 +92,6 @@ config.plugins.push(
     new HtmlWebpackPlugin({
         filename: '../index.html',
         template: commonPath.indexHTML
-    }),
-    new webpack.LoaderOptionsPlugin({
-        options : {
-            postcss : function(){
-                return [
-                    require('autoprefixer')({
-                        broswers : ['last 5 versions']
-                    })
-                ];
-            }
-        }
     })
     // 图片压缩
     /*

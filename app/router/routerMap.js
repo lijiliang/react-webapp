@@ -5,7 +5,7 @@ import App from '../containers/App';
 import Home from '../containers/Home';
 import List from '../containers/List';
 import Detail from '../containers/Detail';
-import NotFound from '../containers/NotFound';
+import NotFound from '../containers/NotFoun';
 
 class RouteMap extends React.Component {
     updateHandle(){

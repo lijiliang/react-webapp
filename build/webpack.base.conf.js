@@ -93,6 +93,18 @@ module.exports = {
         // 进度条
         new NyanProgressPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
+        // 自动加css前缀
+        new webpack.LoaderOptionsPlugin({
+            options : {
+                postcss : function(){
+                    return [
+                        require('autoprefixer')({
+                            broswers : ['last 5 versions']
+                        })
+                    ];
+                }
+            }
+        }),
         new webpack.DefinePlugin({
             'process.env': { // 这是给 React / Redux 打包用的
                 NODE_ENV: JSON.stringify('production')
