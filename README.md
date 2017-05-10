@@ -16,7 +16,7 @@ React开发SPA脚手架。 Webapck / ES6 + Babel / Redux / React Router
 
 ## 安装
 ```shell
-$ git clone https://github.com/lijiliang/react-frame.git
+$ git clone https://github.com/lijiliang/react-webapp.git
 $ cd react-frame
 $ npm install
 ```
