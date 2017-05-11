@@ -7,13 +7,38 @@ body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "微软雅黑","Times New Roman",Georgia,Serif;
+        font-family: Helvetica Neue,Helvetica,STHeiTi,Arial,sans-serif;
     }
 }
 
-input {
-    outline:none;
+html * {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
 }
+
+// input {
+//     outline:none;
+// }
+
+input,textarea {
+    -webkit-appearance: none
+}
+
+:not(input) {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: none
+}
+
+textarea {
+    -webkit-user-select: text
+}
+
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
+    -webkit-appearance: none!important;
+    margin: 0
+}
+
 a{
     text-decoration: none;
 }
