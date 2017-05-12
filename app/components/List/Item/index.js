@@ -1,5 +1,6 @@
 import React from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
+import { Link } from 'react-router';
 import './style.less';
 
 class Item extends React.Component{
@@ -11,6 +12,7 @@ class Item extends React.Component{
         const data = this.props.data;
         return(
             <div className="list-item clear-fix">
+                <Link to={'/detail/' + data.id}>
                 <div className="item-img-container float-left">
                     <img src={data.img} alt={data.title}/>
                 </div>
@@ -27,6 +29,7 @@ class Item extends React.Component{
                         <span className="mumber float-right">已售{data.mumber}</span>
                     </div>
                 </div>
+                </Link>
             </div>
         );
     }
