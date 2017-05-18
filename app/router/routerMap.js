@@ -8,6 +8,7 @@ import Search from '../containers/Search';
 import Login from '../containers/Login';
 import List from '../containers/List';
 import Detail from '../containers/Detail';
+import User from '../containers/User';
 import NotFound from '../containers/NotFoun';
 
 class RouteMap extends React.Component {
@@ -24,6 +25,7 @@ class RouteMap extends React.Component {
                     <Route path="/login(/:router)" component={Login} />
                     <Route path='list' component={List}/>
                     <Route path='detail/:id' component={Detail}/>
+                    <Route path='user' component={User}/>
                     <Route path='*' component={NotFound}/>
                 </Route>
             </Router>
